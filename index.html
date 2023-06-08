@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -------------------------- CDN ---------------------------->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Google Font -->
+    <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- --------------------------CSS & JS ---------------------------- -->
+    <link rel="stylesheet" href="style.css">
+    <title>Calcul Simple</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="login-div">
+                <div class="titre mt-5 rounded-5 font-effect-shadow-multiple">
+                    <img src="image/calculatrice.gif" alt="" class="rounded-circle p-0" id="cal">
+                    Calcul Simple
+                </div>
+                <div class="row d-flex justify-content-center text-center my-5">
+                    <div class="col-md-8">
+                        <div class="input-group">
+                            <input id="x" type="number" placeholder="Nombre 1" class="form-control" />
+                            <input id="y" type="number" placeholder="Nombre 2" class="form-control" />
+                        </div>
+                        <div class="calcul my-3">
+                            <button onclick="Addition()" type="button" class="btn btn-primary rounded-circle m-1" id="cal"><h1>+</h1></button>
+                            <button onclick="Soustraction()" type="button" class="btn btn-primary rounded-circle m-1" id="cal"><h1>-</h1></button>
+                            <button onclick="Multiplication()" type="button" class="btn btn-primary rounded-circle m-1" id="cal"><h1>×</h1></button>
+                            <button onclick="Division()" type="button" class="btn btn-primary rounded-circle m-1" id="cal"><h1>÷</h1></button>
+                        </div>
+                        <div class="my-5">
+                            <div class="cal">
+                                <label for="text">Resultats</label>
+                                <input id="result" type="text" class="form-control" readonly="readonly"/>
+                            </div>
+                            <div>
+                                <a href="index.html">
+                                    <img src="image/reset.gif" alt="Actualiser" class="rounded-circle p-0" id="cal">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

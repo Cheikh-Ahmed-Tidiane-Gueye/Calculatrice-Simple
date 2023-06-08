@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    background-color: #ecf0f3;
+}
+.login-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 650px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 1000px;
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;   
+}
+.titre{
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;  
+}
+.input-group input{
+    text-align: center;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding: 10px 5px 10px 5px;
+}
+#result{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow:inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+.cal{
+    display: flex;
+    flex-direction: column;
+}
+#x,#y{
+    margin: auto 15px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow:inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+#cal{
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    background-color: #cbced1;
+    box-shadow: inset 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+}
+#cal:hover{
+    background-color: white;
+    color: #555;
+}
+img[alt="Actualiser"]{
+    width: 50px;
+    height: 50px;
+}
